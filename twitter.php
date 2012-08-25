@@ -7,7 +7,6 @@ function shareWineList($wineList)
 {
 	$tweet = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, '761641909-1xU5eNkGj4seE25ewEb8gtQoAqAnYocSkBWA3YMb', 'gJ2tf3Wn3W4jVDwdLlz01iESPP3C0s0Ykf2oLSGw');
 	$message = "Search result: ";
-	echo $wineList;
 	if(count($wineList)>0)
 		foreach($wineList as $wine)
 		{
